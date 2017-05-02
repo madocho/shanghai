@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 a {
-  color: #e74c3c;
+  color: #FFF;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -67,9 +67,24 @@ a:hover {
   color: #bdc3c7;
   font-size: 20px;
 }
-.logo-menu {
-  //margin-top: 10px;
-  //margin-bottom: 30px;
+
+#layer_fixed
+{
+    height: 70px;
+    width: 100%;
+    color: #FFF;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    -webkit-box-shadow: 0 1px 2px 0 #777;
+    box-shadow: 0 1px 2px 0 #777;
+    background-color: #FE0200;
+}
+
+#layer_fixed .logo-menu {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .navbar {
   margin-bottom: 0;
