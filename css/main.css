@@ -16,7 +16,8 @@ a {
   transition: all 0.2s linear;
 }
 a:hover {
-  color: #e76c3c;
+  color: #fff100;
+  text-decoration: none !important;
 }
 .row {
   padding: 10px 10px 20px 10px;
