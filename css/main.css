@@ -73,6 +73,7 @@ a:hover {
     height: 70px;
     width: 100%;
     color: #FFF;
+    font-size: 1.6em;
     position: fixed;
     z-index: 999;
     top: 0px;
