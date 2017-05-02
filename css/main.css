@@ -67,9 +67,10 @@ a:hover {
   color: #bdc3c7;
   font-size: 20px;
 }
-.logo-menu .container {
+.logo-menu {
   margin-top: 10px;
   margin-bottom: 30px;
+  background-color: #edebf5;
 }
 .navbar {
   margin-bottom: 0;
@@ -201,7 +202,8 @@ background: url(../img/backgrounds/hero-bg.jpg) fixed;
   margin-top: 20px;
 }
 #features {
-  background: url(../img/backgrounds/feature-bg.jpg);
+  //background: url(../img/backgrounds/feature-bg.jpg);
+  background-color: #edebf5;
   background-size: cover;
   overflow: hidden;
   position: relative;
