@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css:400,700);
 body {
-  font-family: sans-serif;
+  font-family: cwTeXHei, sans-serif;
   font-size: 14px;
   font-weight: 400;
   -webkit-box-sizing: border-box;
