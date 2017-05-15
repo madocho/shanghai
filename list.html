@@ -307,7 +307,7 @@
     <!-- 텍스트 복사 -->
     <script src="js/clipboard.min.js"></script>
     <script>
-    var clipboard = new Clipboard('.btn');
+    var clipboard = new Clipboard('.btnc');
     clipboard.on('success', function(e) {
         console.log(e);
     });
@@ -322,15 +322,15 @@
 
   <div id="users">
   <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="kor">
+  <!-- <button class="sort" data-sort="kor">
     한글명으로 정렬
-  </button>
+  </button> -->
 
   <ul class="list">
     <li>
       <h3 class="kor">1933 라오창팡</h3>
       <p class="chn">1933 老场坊</p>
-      <button class="btn" data-clipboard-action="copy" data-clipboard-text="1933 老场坊">한자복사</button>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="1933 老场坊">한자복사</button>
     </li>
     <li>
       <h3 class="kor">JDF 윈펑 극장</h3>
