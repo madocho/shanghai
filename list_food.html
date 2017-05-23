@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리얼 상하이 음식점&카페</title>
+    <style>
+    ul {
+    }
+    .gnbul {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    li {
+    }
+    .gnbli {
+      float:left;
+    }
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #FE0200;
+    }
+
+    h2 {
+    font-family:sans-serif;
+    }
+    .list {
+      font-family:sans-serif;
+      margin:0;
+      padding:20px 0 0;
+    }
+    .list > li {
+      display:block;
+      background-color: #eee;
+      padding:10px;
+      box-shadow: inset 0 1px 0 #fff;
+    }
+    .avatar {
+      max-width: 150px;
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 16px;
+      margin:0 0 0.3rem;
+      font-weight: normal;
+      font-weight:bold;
+    }
+    p {
+      margin:0;
+    }
+
+    input {
+      border:solid 1px #ccc;
+      border-radius: 5px;
+      padding:10px 18px;
+      margin-bottom:10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+    input:focus {
+      outline:none;
+      border-color:#aaa;
+    }
+    .sort {
+      padding:8px 30px;
+      border-radius: 6px;
+      border:none;
+      display:inline-block;
+      color:#fff;
+      text-decoration: none;
+      background-color: #28a8e0;
+      height:30px;
+    }
+    .sort:hover {
+      text-decoration: none;
+      background-color:#1b8aba;
+    }
+    .sort:focus {
+      outline:none;
+    }
+    .sort:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.desc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:-10px;
+      right:-5px;
+    }
+    .sort.asc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:13px;
+      right:-5px;
+    }
+    </style>
+
+
+</head>
+
+<body>
+  <div style="margin-left:-8px;">
+  <ul class="gnbul">
+    <li class="gnbli"><a href="list_place.html">명소</a></li>
+    <li class="gnbli"><a class="active" href="list_food.html">음식점&카페</a></li>
+    <li class="gnbli"><a href="#">상점</a></li>
+    <li class="gnbli"><a href="#">숙소&스파</a></li>
+    <li class="gnbli"><a href="#">교통</a></li>
+  </ul>
+</div>
+
+  <div id="users">
+  <input class="search" placeholder="검색" />
+  <button class="sort asc" data-sort="kor">
+    가나다순 정렬
+  </button>
+
+  <ul class="list">
+    <li>
+      <h3 class="kor">21 뮤직 하우스</h3>
+      <p class="chn">21音乐房子</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="21音乐房子">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">517 훈툰왕</h3>
+      <p class="chn">517 馄饨王</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="517 馄饨王">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">85두시</h3>
+      <p class="chn">85度C</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="85度C">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">가얼좡위안</h3>
+      <p class="chn">嘎尔庄园</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="嘎尔庄园">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">공더린</h3>
+      <p class="chn">功德林</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="功德林">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">관즈 하우스 198</h3>
+      <p class="chn">馆子 House 198</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="馆子 House 198">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">구동화위안</h3>
+      <p class="chn">古董花园</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="古董花园">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">구전탕위안</h3>
+      <p class="chn">古镇汤圆</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="古镇汤圆">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">난샹만터우</h3>
+      <p class="chn">南翔馒头店</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="南翔馒头店">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">다후춘</h3>
+      <p class="chn">大壶春</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="大壶春">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">더 재즈 바</h3>
+      <p class="chn">爵士吧</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="爵士吧">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">더웨러우</h3>
+      <p class="chn">得月楼</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="得月楼">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">뎬 카페</h3>
+      <p class="chn">点</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="点">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">드래곤 피닉스</h3>
+      <p class="chn">龙凤厅</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="龙凤厅">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">라오양팡</h3>
+      <p class="chn">老洋房花园饭店</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="老洋房花园饭店">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">라오위안즈다완몐</h3>
+      <p class="chn">老院子大碗面</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="老院子大碗面">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">라오청황먀오 샤오츠광창</h3>
+      <p class="chn">上海老城隍庙小吃广场</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="上海老城隍庙小吃广场">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">란팅찬팅</h3>
+      <p class="chn">兰亭餐厅</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="兰亭餐厅">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">러우와이러우</h3>
+      <p class="chn">楼外楼</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="楼外楼">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor">런자이차자이</h3>
+      <p class="chn">人在茶在</p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="人在茶在">한자복사</button>
+    </li>
+    <li>
+      <h3 class="kor"></h3>
+      <p class="chn"></p>
+      <button class="btnc" data-clipboard-action="copy" data-clipboard-text="">한자복사</button>
+    </li>
+  </ul>
+
+</div>
+
+<!-- 텍스트 복사 -->
+<script src="js/clipboard.min.js"></script>
+<script>
+var clipboard = new Clipboard('.btnc');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+<!-- 텍스트 복사 끝 -->
+
+<!-- 리스트 검색 -->
+<script src="js/list.min.js"></script>
+
+<script>
+var options = {
+valueNames: [ 'kor' ]
+};
+
+var userList = new List('users', options);
+//# sourceURL=pen.js
+</script>
+<!-- 리스트 검색 끝 -->
+
+</body>
+</html>
