@@ -75,17 +75,6 @@
       top:-10px;
       right:-5px;
     }
-    .sort.asc:after {
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #fff;
-      content:"";
-      position: relative;
-      top:13px;
-      right:-5px;
-    }
     .sort.desc:after {
       width: 0;
       height: 0;
@@ -97,6 +86,17 @@
       top:-10px;
       right:-5px;
     }
+    .sort.asc:after {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fff;
+      content:"";
+      position: relative;
+      top:13px;
+      right:-5px;
+    }
     </style>
 
 
@@ -105,8 +105,8 @@
 <body translate="no"  onload="_l='t';">
 
   <div id="users">
-  <input class="search" placeholder="검색" />&nbsp;
-  <button class="sort" data-sort="kor">
+  <input class="search" placeholder="검색" />
+  <button class="sort asc" data-sort="kor" style="margin-left:20px;">
     가나다순 정렬
   </button>
 
